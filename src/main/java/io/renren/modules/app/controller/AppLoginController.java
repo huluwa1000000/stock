@@ -50,6 +50,7 @@ public class AppLoginController {
 
         //用户登录
         long userId = userService.login(form);
+        
 
         //生成token
         String token = jwtUtils.generateToken(userId);
